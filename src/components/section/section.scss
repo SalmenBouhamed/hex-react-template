@@ -1,0 +1,40 @@
+@import '../../variable.scss';
+
+.App {
+    font-family: "Poppins", sans-serif;
+
+    .Section {
+        padding: 80px 0;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding-top: calc($pageRadius + 80px) !important;
+        margin-top: calc($pageRadius * -1);
+        clip-path: polygon( 0 0, calc($pageRadius*2*0.294 - 3px) calc($pageRadius - 4px), calc($pageRadius*2*0.294 + 3px) $pageRadius, calc(100% - $pageRadius*2*0.294 - 3px) $pageRadius, calc(100% - $pageRadius*2*0.294 + 3px) calc($pageRadius - 4px), 100% 0, 100% 100%, 0 100% );
+        
+        .page-outer {
+            width: $bodyWidth;
+            text-align: left;
+            margin: 0 auto; 
+            display: inline-block;
+
+            .mainTitle {
+                margin: 80px 0 20px 0;
+                font-size: 36px !important;
+                line-height: 1.75em;
+                display: inline-block;
+                width: calc($bodyWidth - 375px);
+            }
+
+            .sell-frame {
+                top: 173px;
+                height: 604px;
+                width: 370px;
+                border: 0 none;
+                border-radius: 15px;
+                box-shadow: 0 25px 50px #000;
+                position: absolute;
+            }
+        }
+    }
+}

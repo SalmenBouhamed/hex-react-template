@@ -1,0 +1,64 @@
+@import '../../variable.scss';
+
+.App {
+    .MenuBar {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        align-items: center;
+        width: 100%;
+        z-index: 1;
+        background-color: #111;
+        -webkit-box-shadow: 5px 5px 15px 5px #111; 
+        box-shadow: 0px 0px 5px 5px #111;
+    
+        .nav-bar {
+            width: $bodyWidth;
+            height: 80px;
+            border-bottom: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            flex-shrink: 0;
+            max-width: $bodyWidth;
+            margin: 0 auto;
+            padding: 0 20px;
+            flex-wrap: nowrap;
+            align-items: center;
+
+            .menuLinkLogo {
+                img {
+                    height: 40px;
+                }
+            }
+
+            .menuLink {
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 16px;
+                text-transform: uppercase;
+                letter-spacing: .05em;
+                color: #aaa;
+            }:hover {
+                color: #ccc;
+            }
+
+            .menuLinkFlex {
+                flex: 1 1 auto;
+            }
+
+            .menuLinkBuyButton {
+                background: linear-gradient(30deg, #ffdb01 0%, #ff851f 30%, #ff3d3d 52%, #ff0f6f 70%, #f0f 100%);
+                height: 45px;
+                color: #fff;
+                letter-spacing: .1em;
+                display: flex;
+                align-items: center;
+                padding: 5px 22px 5px 22px;
+                clip-path: polygon(12px 1.5px, 14px 0, calc(100% - 14px) 0, calc(100% - 12px) 1.5px, 100% 48%, 100% 52%, calc(100% - 12px) calc(100% - 1.5px), calc(100% - 14px) 100%, 14px 100%, 12px calc(100% - 1.5px), 0 52%, 0 48% );
+            }
+        }
+    }
+}
